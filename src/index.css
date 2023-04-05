@@ -1,114 +1,188 @@
-*{
-  margin: 0;
-  padding: 0;
+* {
+	margin: 0;
+	padding: 0;
 }
-span.my-icon{
-  font-family: "MyFont";
-  color: #ffffffa8;
-  font-size: 18px;
+*::-webkit-scrollbar {
+	width: 0;
+	display: none;
+}
+span.my-icon {
+	font-family: "MyFont";
+	color: #ffffffa8;
+	font-size: 18px;
 }
 
 /**/
 /**HEADER*/
 /**/
-header{
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 0px 49px;
-  max-width: 100%;
-  min-width: 1244px;
-  height: 90px;
-  background: #2E2E2E; 
+header {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 0px 49px;
+	max-width: 100%;
+	min-width: 1244px;
+	height: 90px;
+	background: #2e2e2e;
 }
 
 /**/
 /**NAVBAR*/
 /**/
-nav{
-  width: 13.6%;
-  height: 100vh;
-  background-color: #2E2E2E;
-  padding: 20px;
+.side-bar {
+	min-height: calc(100vh - 90px);
+	min-width: 13.6%;
+	background-color: #2e2e2e;
+	padding: 20px;
 }
-nav ul{
-  list-style-type: none;
-  margin-top: 40px;
+nav ul {
+	list-style-type: none;
+	margin-top: 40px;
 }
-nav ul li{
-  margin-bottom: 24px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  padding-left: 20%;
+nav ul li {
+	margin-bottom: 24px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	padding-left: 20%;
 }
-nav ul li:hover{
-  background-color: #1f1f1f;
-  border-radius: 10px;
+nav ul li:hover {
+	background-color: #1f1f1f;
+	border-radius: 10px;
 }
-nav ul li:hover a{
-  color: #fff;
+nav ul li:hover a {
+	color: #fff;
 }
-nav ul li:hover span{
-  color: #FF158B;
+nav ul li:hover span {
+	color: #ff158b;
 }
-nav li a{
-  margin-left: 10%;
-  color: #ffffffa8;
-  text-decoration: none;
-  font-family: "CeraCompactPro-Regular";
-  font-size: 18px;
+nav li a {
+	margin-left: 10%;
+	color: #ffffffa8;
+	text-decoration: none;
+	font-family: "CeraCompactPro-Regular";
+	font-size: 18px;
 }
 
 /**/
 /**FOOTER*/
 /**/
-footer{
-  padding: 49px;
-  max-width: 100%;
-  min-width: 1244px;
-  height: fit-content;
-  background: #2E2E2E; 
-  font-family: "CeraCompactPro-Regular";
-  color: #fff;
+footer {
+	display: flex;
+	flex-direction: column;
+	padding: 49px;
+	max-width: 100%;
+	min-width: 1244px;
+	height: fit-content;
+	background: #2e2e2e;
+	font-family: "CeraCompactPro-Regular";
+	color: #fff;
 }
-.footer-top{
-  margin-left: 7%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+.footer-top {
+	margin-left: 7%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
 }
-.info-box h5{
-  font-size: 16px;
+.info-box h5 {
+	font-size: 16px;
 }
-.spacer{
-  width: 10%;
+.spacer {
+	width: 10%;
 }
-.footer-section{
-  display: flex;
+.footer-section {
+	display: flex;
+	flex-direction: column;
+}
+.footer-section h5 {
+	font-size: 19px;
+	margin-bottom: 30%;
+}
+.footer-section a {
+	margin-bottom: 15%;
+	font-size: 17px;
+	color: #ffffffa8;
+	text-decoration: none;
+}
+.footer-section a:hover {
+	color: #fff;
+}
+.line {
+	height: 1px;
+	background-color: #ffffffa8;
+	margin: 3% 0 3% 14%;
+}
+.footer-bottom {
+	margin-left: 14%;
+	display: flex;
+	justify-content: space-between;
+	color: #ffffffa8;
+}
+
+/***/
+/**PAGE LAYOUT*/
+/***/
+.main-container {
+	display: flex;
+	min-height: 100vh;
+	background-color: #202020;
+	color: #ffffffa8;
+}
+.content {
+	flex-grow: 1;
+}
+
+/************************************/
+/***/
+/***********HOME PAGE BODY***********/
+/***/
+/************************************/
+
+.page-body {
+	padding: 40px;
+}
+.news-wrapper {
+	display: flex;
+	gap: 24px;
+	margin-bottom: 24px;
+}
+.promo-section,
+.games-section {
+	min-width: 70.8%;
+	height: 329px;
+	background-color: #fff;
+	border-radius: 10px;
+}
+.releases-section,
+.categories-section {
+	background-color: antiquewhite;
+	flex-grow: 1;
+	border-radius: 10px;
+}
+.games-wrapper {
+	display: flex;
+	gap: 24px;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+.games-section {
+	width: 70.8%;
+	display: flex;
+	gap: 24px;
+	overflow: auto;
+}
+
+/**GAME TILE*/
+.game-tile {
+	flex: none;
+	display: flex;
   flex-direction: column;
-}
-.footer-section h5{
-  font-size: 19px;
-  margin-bottom: 30%;
-}
-.footer-section a{
-  margin-bottom: 15%;
-  font-size: 17px;
-  color: #ffffffa8;
-  text-decoration: none;
-}
-.footer-section a:hover{
-  color: #fff;
-}
-.line{
-  height: 1px;
-  background-color: #ffffffa8;
-  margin: 3% 0 3% 14%;
-}
-.footer-bottom{
-  margin-left: 14%;
-  display: flex;
   justify-content: space-between;
-  color: #ffffffa8;
+	background-color: crimson;
+	width: 224px;
+	min-height: 100%;
+	border-radius: 10px;
+}
+.glass {
+	background-color: aquamarine;
 }
