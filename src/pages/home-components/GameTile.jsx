@@ -1,25 +1,26 @@
 import React from "react";
 
-function GameTile() {
+function GameTile(props) {
+	const { title, adv, downloads, rating, image } = props;
 	return (
 		<div class="game-tile">
-			<img src="" />
-			<div class="game-adv">
-				<p>New</p>
-			</div>
+			<img src={`${process.env.PUBLIC_URL}/${image}`} alt="game-image" />
+			<p className="game-adv">{adv}</p>
 			<div class="glass">
-				<div class="glass-title">
-					<a href="#">PUBG</a>
+				<div className="glass-info">
+					<a href="#">{title}</a>
+					<p>
+						<span class="icon">u</span>
+						{downloads}
+					</p>
+					<p>
+						<span class="icon star">i</span>
+						{rating}
+					</p>
 				</div>
-				<div class="glass-downloads">
-					<p class="icon">u</p>
-					<p> 50.5k</p>
+				<div>
+					<button>Download</button>
 				</div>
-				<div class="glass-rating">
-					<p class="icon">iiiii</p>
-					<p> 4.3</p>
-				</div>
-				<button>Download</button>
 			</div>
 		</div>
 	);
