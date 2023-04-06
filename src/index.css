@@ -182,7 +182,6 @@ footer {
 	overflow: hidden;
 	width: 224px;
 	min-height: 100%;
-	border-radius: 10px;
 }
 .game-tile img{
 	min-height: 100%;
@@ -241,6 +240,58 @@ span.star{
 
 .game-tile:hover .glass{
 	top: -58%;
-	transition: top 0.5s;
+	transition: top 0.4s;
 }
 
+
+/**RELEASES*/
+.releases-section{
+	background-color: #2e2e2e;
+	color: #fff;
+	/*!Fix Pixels component*/
+	max-height: 327px;
+}
+.releases-section h3{
+	font-family: "CeraCompactPro-Bold";
+	font-size: 17px;
+	margin: 24px;
+}
+.releases-items{
+	overflow: auto;
+	max-height: 70%;
+}
+
+.releases-item{
+	background-color: #323232;
+	margin: 0 24px 12px 24px;
+	padding: 0 14px;
+	border-radius: 10px;
+	min-height: 75px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.releases-game{
+	display: flex;
+	align-items: center;
+	gap: 6px;
+}
+.releases-gamename{
+	font-family: "CeraCompactPro-Medium";
+	font-size: 17px;
+}
+.releases-gamedate{
+	font-family: "CeraCompactPro-Regular";
+	font-size: 10px;
+	color: #16FFAB;
+}
+.releases-button button{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	border-radius: 10px;
+	background-color: #ff158b;
+	border: none;
+	padding: 8px;
+}
