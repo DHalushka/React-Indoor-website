@@ -1,5 +1,7 @@
 import React from "react";
+import CategorieTile from "./home-components/CategorieTile";
 import GameTile from "./home-components/GameTile";
+import PromoTile from "./home-components/PromoTile";
 import ReleaseTile from "./home-components/ReleaseTile";
 
 function Home() {
@@ -7,7 +9,9 @@ function Home() {
 		<main className="content">
 			<div className="page-body">
 				<div className="news-wrapper">
-					<div className="promo-section"></div>
+					<div className="promo-section">
+						<PromoTile/>
+					</div>
 					<div className="releases-section">
 						<h3>Latest releases</h3>
 						<div className="releases-items">
@@ -32,7 +36,15 @@ function Home() {
 					</div>
 				</div>
 				<div className="games-wrapper">
-					<div className="categories-section"></div>
+					<div className="categories-section">
+						<h3>Categories</h3>
+						<div className="categories-items">
+							<CategorieTile categorie="Adventure"/>
+							<CategorieTile categorie="Puzzels"/>
+							<CategorieTile categorie="Arcade"/>
+							<CategorieTile categorie="Sports"/>
+						</div>
+					</div>
 					<div className="games-section">
 						<GameTile
 							title="Dota 2"
