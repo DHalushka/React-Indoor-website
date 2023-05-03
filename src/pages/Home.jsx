@@ -5,12 +5,28 @@ import PromoTile from "./home-components/PromoTile";
 import ReleaseTile from "./home-components/ReleaseTile";
 
 function Home() {
+	const [games, setGames] = React.useState([]);
+	const [categorieId, setCategorieId] = React.useState(0);
+	//const [sortType, setSortType] = React.useState(0);
+
+	React.useEffect(() => {
+		fetch(
+			"https://64519bece1f6f1bb22b3bd5e.mockapi.io/games?categorie=" +
+				categorieId
+		)
+			.then((res) => res.json())
+			.then((arr) => {
+				setGames(arr);
+				//setIsLoading(false);
+			});
+	}, [categorieId]);
+
 	return (
 		<main className="content">
 			<div className="page-body">
 				<div className="news-wrapper">
 					<div className="promo-section">
-						<PromoTile/>
+						<PromoTile />
 					</div>
 					<div className="releases-section">
 						<h3>Latest releases</h3>
@@ -38,42 +54,23 @@ function Home() {
 				<div className="games-wrapper">
 					<div className="categories-section">
 						<h3>Categories</h3>
-						<div className="categories-items">
-							<CategorieTile categorie="Adventure"/>
-							<CategorieTile categorie="Puzzels"/>
-							<CategorieTile categorie="Arcade"/>
-							<CategorieTile categorie="Sports"/>
-						</div>
+						<CategorieTile
+							value={categorieId}
+							onCategorieClick={(i) => setCategorieId(i)}
+						/>
 					</div>
 					<div className="games-section">
-						<GameTile
-							title="Dota 2"
-							adv="Popular"
-							downloads="30.1k"
-							rating="4.3"
-							image="dota2.jpg"
-						/>
-						<GameTile
-							title="Sea of Thieves"
-							adv="New"
-							downloads="50.4k"
-							rating="4.3"
-							image="seaoftheves.jpg"
-						/>
-						<GameTile
-							title="Minecraft"
-							adv="Popular"
-							downloads="50k"
-							rating="4.7"
-							image="minecrafr.webp"
-						/>
-						<GameTile
-							title="PUBG"
-							adv="Challange"
-							downloads="30.2k"
-							rating="4.3"
-							image="pubg.jpg"
-						/>
+						{games.map((obj) => (
+							<GameTile
+								id={obj.id}
+								title={obj.title}
+								adv={obj.adv}
+								downloads={obj.downloads}
+								rating={obj.rating}
+								imageURL={obj.imageUrl}
+								categorie={obj.categorie}
+							/>
+						))}
 					</div>
 				</div>
 			</div>

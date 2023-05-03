@@ -1,17 +1,17 @@
 import React from "react";
 
 function GameTile(props) {
-	const { title, adv, downloads, rating, image } = props;
+	const { id, title, adv, downloads, rating, imageURL, categorie } = props;
 	return (
 		<div class="game-tile">
-			<img src={`${process.env.PUBLIC_URL}/${image}`} alt="game-image" />
+			<img src={`${process.env.PUBLIC_URL}/${imageURL}`} alt="game-image" />
 			<p className="game-adv">{adv}</p>
 			<div class="glass">
 				<div className="glass-info">
 					<a href="#">{title}</a>
 					<p>
 						<span class="icon">u</span>
-						{downloads}
+						{downloads}k
 					</p>
 					<p>
 						<span class="icon star">i</span>

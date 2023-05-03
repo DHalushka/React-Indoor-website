@@ -1,0 +1,32 @@
+<GameTile
+							title="Dota 2"
+							adv="Popular"
+							downloads="30.1"
+							rating="4.3"
+							image="dota2.jpg"
+							categorie="1"
+						/>
+						<GameTile
+							title="Sea of Thieves"
+							adv="New"
+							downloads="50.4"
+							rating="4.3"
+							image="seaoftheves.jpg"
+							categorie="1"
+						/>
+						<GameTile
+							title="Minecraft"
+							adv="Popular"
+							downloads="50"
+							rating="4.7"
+							image="minecrafr.webp"
+							categorie="2"
+						/>
+						<GameTile
+							title="PUBG"
+							adv="Challange"
+							downloads="30.2"
+							rating="4.3"
+							image="pubg.jpg"
+							categorie="3"
+						/>

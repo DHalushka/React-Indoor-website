@@ -1,0 +1,101 @@
+[
+		{
+			"id": 0,
+			"imageUrl": "dota2.jpg",
+			"title": "Dota 2",
+			"adv": "Popular",
+			"downloads": 30.1,
+			"rating": 4.3,
+			"categorie": 0
+		},
+		{
+			"id": 1,
+			"imageUrl": "seaoftheves.jpg",
+			"title": "Sea of Thieves",
+			"adv": "New",
+			"downloads": 50.4,
+			"rating": 4.3,
+			"categorie": 1
+		},
+		{
+			"id": 2,
+			"imageUrl": "minecrafr.webp",
+			"title": "Minecraft",
+			"adv": "Popular",
+			"downloads": 50,
+			"rating": 4.7,
+			"categorie": 2
+		},
+		{
+			"id": 3,
+			"imageUrl": "pubg.jpg",
+			"title": "PUBG",
+			"adv": "Challange",
+			"downloads": 30.2,
+			"rating": 4.3,
+			"categorie": 3
+		},
+		{
+			"id": 4,
+			"imageUrl": "Anomaly.jpg",
+			"title": "Anomaly",
+			"adv": "Challange",
+			"downloads": 11.3,
+			"rating": 3.6,
+			"categorie": 2
+		},
+		{
+			"id": 5,
+			"imageUrl": "AgeOfWonders.webp",
+			"title": "Age Of Wonders",
+			"adv": "New",
+			"downloads": 22.4,
+			"rating": 4.9,
+			"categorie": 0
+		},
+		{
+			"id": 6,
+			"imageUrl": "ArcRunner.webp",
+			"title": "ArcRunner",
+			"adv": "New",
+			"downloads": 3,
+			"rating": 4.3,
+			"categorie": 2
+		},
+		{
+			"id": 7,
+			"imageUrl": "WW2Rebuilder.webp",
+			"title": "WW2 Rebuilder",
+			"adv": "Challange",
+			"downloads": 65,
+			"rating": 3.8,
+			"categorie": 1
+		},
+		{
+			"id": 8,
+			"imageUrl": "TheSims4.jpg",
+			"title": "The Sims 4",
+			"adv": "Popular",
+			"downloads": 57,
+			"rating": 4.9,
+			"categorie": 0
+		},
+		{
+			"id": 9,
+			"imageUrl": "EuroTruckSimulator.jpg",
+			"title": "Euro Truck Simulator",
+			"adv": "Sports",
+			"downloads": 62,
+			"rating": 4.6,
+			"categorie": 3
+		},
+		{
+			"id": 10,
+			"imageUrl": "RedFall.webp",
+			"title": "Red Fall",
+			"adv": "Zombies",
+			"downloads": 19,
+			"rating": 4.2,
+			"categorie": 2
+		}
+]
