@@ -1,6 +1,6 @@
 import React from "react";
 
-function Contact() {
+function Schedule() {
 	return (
 		<div>
 			<h1>Welcome to Schedule page!!!</h1>
@@ -8,4 +8,4 @@ function Contact() {
 	);
 }
 
-export default Contact;
+export default Schedule;

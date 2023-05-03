@@ -1,14 +1,37 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 function GameTile(props) {
-	const { id, title, adv, downloads, rating, imageURL, categorie } = props;
+	const {
+		id,
+		title,
+		adv,
+		downloads,
+		rating,
+		imageURL,
+		categorie,
+		price,
+		description,
+		releaseDate,
+		developer,
+		OS,
+		processor,
+		memory,
+		graphics,
+		storage,
+		slide1,
+		slide2,
+		slide3
+	} = props;
 	return (
 		<div class="game-tile">
-			<img src={`${process.env.PUBLIC_URL}/${imageURL}`} alt="game-image" />
+			<NavLink to={`/library/${id}`}>
+				<img src={`${process.env.PUBLIC_URL}/${imageURL}`} alt="game-image" />
+			</NavLink>
 			<p className="game-adv">{adv}</p>
 			<div class="glass">
 				<div className="glass-info">
-					<a href="#">{title}</a>
+					<NavLink to={`/library/${id}`}>{title}</NavLink>
 					<p>
 						<span class="icon">u</span>
 						{downloads}k
@@ -19,7 +42,9 @@ function GameTile(props) {
 					</p>
 				</div>
 				<div>
-					<button>Download</button>
+					<NavLink to={`/library/${id}`}>
+						<button>Download</button>
+					</NavLink>
 				</div>
 			</div>
 		</div>

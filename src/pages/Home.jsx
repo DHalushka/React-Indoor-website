@@ -7,6 +7,8 @@ import ReleaseTile from "./home-components/ReleaseTile";
 function Home() {
 	const [games, setGames] = React.useState([]);
 	const [categorieId, setCategorieId] = React.useState(0);
+	const [isLoading, setIsLoading] = React.useState(true);
+
 	//const [sortType, setSortType] = React.useState(0);
 
 	React.useEffect(() => {
@@ -17,7 +19,7 @@ function Home() {
 			.then((res) => res.json())
 			.then((arr) => {
 				setGames(arr);
-				//setIsLoading(false);
+				setIsLoading(false);
 			});
 	}, [categorieId]);
 

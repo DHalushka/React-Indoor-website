@@ -8,8 +8,12 @@ import Messages from "./pages/Messages";
 import "./index.css";
 import "./font.css"
 import Friends from "./pages/Friends";
+import Cart from "./pages/Cart";
+import GamePage from "./pages/GamePage";
+
 
 export default function App() {
+
 	return (
 		<BrowserRouter>
 			<Routes>
@@ -19,6 +23,8 @@ export default function App() {
 					<Route path="schedule" element={<Schedule />} />
 					<Route path="messages" element={<Messages />} />
 					<Route path="friends" element={<Friends />} />
+					<Route path="cart" element={<Cart />} />
+					<Route path="library/:id" element={<GamePage />} />
 				</Route>
 			</Routes>
 		</BrowserRouter>
