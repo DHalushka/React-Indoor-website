@@ -10,6 +10,7 @@ import "./font.css"
 import Friends from "./pages/Friends";
 import Cart from "./pages/Cart";
 import GamePage from "./pages/GamePage";
+import About from "./pages/About";
 
 
 export default function App() {
@@ -25,6 +26,7 @@ export default function App() {
 					<Route path="friends" element={<Friends />} />
 					<Route path="cart" element={<Cart />} />
 					<Route path="library/:id" element={<GamePage />} />
+					<Route path="About" element={<About />} />
 				</Route>
 			</Routes>
 		</BrowserRouter>

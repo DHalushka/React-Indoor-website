@@ -1,15 +1,22 @@
 import React from "react";
-import logo from "./LOGO.svg"
+import { Link } from "react-router-dom";
 
-function FooterSection() {
+function FooterSection(props) {
+    const {
+        sectionTitle,
+        sectionLink1,
+        sectionLink2,
+        sectionLink3
+    }=props;
 	return (
         <div className="footer-section">
-            <h5>Product</h5>
-            <a href="/">Download</a>
-            <a href="/">Nitro</a>
-            <a href="/">State</a>
+            <h5>{sectionTitle}</h5>
+            <Link to={sectionLink1}>{sectionLink1}</Link>
+            <Link to={sectionLink2}>{sectionLink2}</Link>
+            <Link to={sectionLink3}>{sectionLink3}</Link>
         </div>
     )
 }
+
 
 export default FooterSection;

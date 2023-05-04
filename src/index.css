@@ -35,6 +35,7 @@ a {
 /**HEADER*/
 /**/
 header {
+	z-index: 9999;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -113,7 +114,7 @@ footer {
 	margin-left: 7%;
 	display: flex;
 	justify-content: space-evenly;
-	align-items: center;
+	align-items: flex-start;
 }
 .info-box h5 {
 	font-size: 16px;
@@ -572,10 +573,6 @@ span.star {
 	color: #ffffffa8;
 }
 
-.content {
-	flex-grow: 1;
-}
-
 .slider-section {
 	display: flex;
 	gap: 24px;
@@ -718,4 +715,94 @@ table {
 
 .system-requirments td {
 	width: 100rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.aboutPage{
+	width: 100vw;
+	padding: 40px;
+	color: #fff;
+}
+.aboutPage h2{
+	font-family: "CeraCompactPro-Black";
+	font-size: 250%;
+	line-height: 4rem;
+}
+.aboutPage h3{
+	font-family: "CeraCompactPro-Light";
+	font-size: 120%;
+	min-width: 20rem;
+}
+.aboutPage a{
+	font-family: "CeraCompactPro-Medium";
+	font-size: 150%;
+	color: #ff158b;
+	line-height: 4rem;
+
+}
+.about-text{
+	min-width: 30rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.aboutPage .about-store{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 20rem;
+}
+.aboutPage .about-store a:hover{
+	background-color: #ff158a3b;
+	box-shadow: 0 0 20rem 3rem #ff158b;
+	transition: 0.4s;
+}
+.about-text.store{
+	align-items: center;
+	text-align: center;
+		max-width: 20rem;
+
+}
+
+.about-container{
+	background-color: #2e2e2e;
+	border-radius: 10px;
+	padding: 40px;
+}
+.about-community,
+.about-schedule,
+.about-friends,
+.about-more{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin: 5rem 0;
+}
+.about-container a:hover {
+	margin-left: 2rem;
+	transition: 0.3s;
+}
+.about-illustration img{
+	width: 100%;
+	object-fit: contain;
+}
+.about-more button{
+	padding: 2rem 4rem;
+	font-size: 20px;
+}
+.about-more button:hover{
+	box-shadow: 0 0 10rem 1rem #ff158b;
+	transition: 0.4s;
 }
