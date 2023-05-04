@@ -155,7 +155,6 @@ footer {
 /***/
 .main-container {
 	display: flex;
-	min-height: 100vh;
 	background-color: #202020;
 	color: #ffffffa8;
 }
@@ -477,7 +476,6 @@ span.star {
 /***************************/
 /***************************/
 .library-page {
-	height: fit-content;
 	margin: 40px;
 	width: 100%;
 }
@@ -535,6 +533,7 @@ span.star {
 }
 
 .library-games-section {
+	min-height: calc(100vh - 270px);
 	margin-top: 40px;
 	border-radius: 10px;
 	background: none;
@@ -566,391 +565,157 @@ span.star {
 	box-shadow: 0px 3px 10px -2px #00000070;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.content{
-    position: relative;
-    display: block;
-    padding: 40px 40px 0px 40px;
+.game-page {
+	padding: 40px;
+	display: flex;
+	background-color: #202020;
+	color: #ffffffa8;
 }
 
-
-
-
-
-
-
-
-
-
-.slider-section{
-    display: grid;
-    grid-template-columns: 867px 273px;
-    grid-template-rows: 511px;
+.content {
+	flex-grow: 1;
 }
 
-
-
-
-.wrapper {
-	height: 487px;
-    width: 867px;
-    grid-column-start: 1;
-    grid-column-end: 2;
-
-	position: relative;
-    border-radius: 10px;
-
+.slider-section {
+	display: flex;
+	gap: 24px;
+	margin-bottom: 24px;
 }
-
 .slider {
-	height: inherit;
+	background-color: #2e2e2e;
+	border-radius: 10px;
 	overflow: hidden;
+}
+.slider figure {
 	position: relative;
-	width: inherit;
-    border-radius: 10px;
+	width: 500%;
+	height: 100%;
+	margin: 0;
+	left: 0;
+	animation: 20s slider infinite;
 }
-.wrapper > input {
-	display: none;
-}
-.slides {
+.slider img {
+	border-radius: 10px;
+	object-fit: cover;
+	width: 20%;
 	height: inherit;
-	position: absolute;
-	width: inherit;
+	float: left;
+}
+@keyframes slider {
+	0% {
+		left: 0;
+	}
+	25% {
+		left: 0;
+	}
+	30% {
+		left: -100%;
+	}
+	55% {
+		left: -100%;
+	}
+	60% {
+		left: -200%;
+	}
+	85% {
+		left: -200%;
+	}
+	90%{
+		left: -300%;
+	}
+	100% {
+		left: -300%;
+	}	
 }
 
-.wrapper .controls {
-	left: 50%;
-	margin-left: -98px;
-	position: absolute;
-    margin-top: -64;
-    z-index: 1;
+.game-info {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	min-height: fit-content;
+	min-width: 273px;
+	background-color: #2e2e2e;
+	border-radius: 10px;
+	padding: 24px;
+}
+.game-info-description {
+	margin-bottom: 2rem;
+	text-align: justify;
+}
+.game-info-description,
+.game-info-table-title {
+	font-family: "CeraCompactPro-Light";
+	font-size: 15px;
+	color: #fff;
+}
+.game-info table {
+	margin: auto 0;
+	align-self: flex-start;
+}
+.game-info-table-title {
+	text-transform: uppercase;
+	margin-right: 1.5rem;
+}
+.download {
+	margin-bottom: 24px;
+	height: 4rem;
+	border-radius: 10px;
+	padding: 24px 48px;
+	background-color: #2e2e2e;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.download-button{
+	display: flex;
+	color: #fff;
+	font-family: "CeraCompactPro-Medium";
+	align-items: center;
+	gap: 24px;
 }
 
-.wrapper label {
-	cursor: pointer;
-	display: inline-block;
-	height: 8px;
-	margin: 25px 12px 0 16px;
-	position: relative;
-	width: 8px;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	-o-border-radius: 50%;
-	border-radius: 50%;
+.download button {
+	font-size: 16px;
+	padding: 1rem 2rem;
 }
 
-.wrapper label:after {
-	border: 2px solid #ddd;
-	content: " ";
-	display: block;
-	height: 12px;
-	left: -4px;
-	position: absolute;
-	top: -4px;
-	width: 12px;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	-o-border-radius: 50%;
-	border-radius: 50%;
+h1 {
+	font-family: "CeraCompactPro-Black";
+	font-size: 34px;
+	color: #ff158b;
 }
 
-.wrapper label {
-	cursor: pointer;
-	display: inline-block;
-	height: 8px;
-	margin: 25px 12px 0 16px;
-	position: relative;
-	width: 8px;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	-o-border-radius: 50%;
-	border-radius: 50%;
-	-webkit-transition: background ease-in-out .5s;
-	-moz-transition: background ease-in-out .5s;
-	-o-transition: background ease-in-out .5s;
-	transition: background ease-in-out .5s;
+.game-info table tr td ~ td {
+	font-family: "CeraCompactPro-Light";
+	font-size: 11px;
+	color: #16ffab;
+}
+.system-reqirements {
+	font-family: "CeraCompactPro-Bold";
+	font-size: 17px;
+	color: #fff;
+}
+.system-requirments tr {
+	font-family: "CeraPro-Regular";
+	font-size: 19px;
+	color: #fff;
+}
+.system-requirments tr ~ tr {
+	font-family: "CeraCompactPro-Regular";
+	font-size: 12px;
+	color: rgba(255, 255, 255, 0.7);
 }
 
-.wrapper label:hover, 
-#slide1:checked ~ .controls label:nth-of-type(1),
-#slide2:checked ~ .controls label:nth-of-type(2),
-#slide3:checked ~ .controls label:nth-of-type(3),
-#slide4:checked ~ .controls label:nth-of-type(4),
-#slide5:checked ~ .controls label:nth-of-type(5) {
-	background: #ddd;
+table {
+	margin-top: 24px;
 }
 
-.slides {
-	height: inherit;
-	opacity: 0;
-	position: absolute;
-	width: inherit;
-    border-radius: 10px;
-	z-index: 0;
-	-webkit-transform: scale(1.5);
-	-moz-transform: scale(1.5);
-	-o-transform: scale(1.5);
-	transform: scale(1.5);
-	-webkit-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
-	-moz-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
-	-o-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
-	transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+.characteristics-block {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
 }
 
-#slide1:checked ~ .slider > .slide1,
-#slide2:checked ~ .slider > .slide2,
-#slide3:checked ~ .slider > .slide3,
-#slide4:checked ~ .slider > .slide4,
-#slide5:checked ~ .slider > .slide5 {
-	opacity: 1;
-	z-index: 1;
-    border-radius: 10px;
-	-webkit-transform: scale(1);
-	-moz-transform: scale(1);
-	-o-transform: scale(1);
-	transform: scale(1);
-}
-
-.promo .back-shadow{
-    overflow: hidden;
-    margin-left: 19px;
-    position: absolute;
-    width: 825px;
-    height: 511px;
-    background-color: #323232;
-    border-radius: 10px;
-    z-index: 1;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-.game-info{
-    grid-column-start: 2;
-    grid-column-end: 3;
-
-    width: 273px;
-    height: 514px;
-    background-color: #2E2E2E;
-    border-radius: 10px;
-    margin-left: 24px;    
-    padding: 24px;
-}
-
-.game-characteristics{
-    display: grid;
-    position: absolute;
-    margin-top: 76px;
-    align-items: center;
-}
-.game-characteristics .title1{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-.game-characteristics .title2{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
-.game-characteristics .title3{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 3;
-    grid-row-end: 4;
-}
-.game-characteristics .title4{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 5;
-    grid-row-end: 6;
-}
-.game-characteristics .title5{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 7;
-    grid-row-end: 8;
-}
-.game-characteristics .info1{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-.game-characteristics .info2{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
-.game-characteristics .info3{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 4;
-}
-.game-characteristics .info4{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 5;
-    grid-row-end: 6;
-}
-.game-characteristics .info5{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 7;
-    grid-row-end: 8;
-}
-
-
-
-
-
-
-.download{
-    margin-top: 24px;
-    margin-bottom: 24px;
-    height: 107px;
-    width: 1164px;
-    border-radius: 10px;
-    padding: 24px;
-    background-color: #2E2E2E;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.download img{
-    margin-left: 24px;
-}
-.download button{
-    margin-left: 48px;
-    height: 45px;
-    width: 140px;
-    background-color: #FF158B;
-    border-radius: 10px;
-    color: #fff;
-    font-family: 'CeraCompactPro-Medium';
-    font-size: 16;
-    cursor: pointer;
-}
-.download .download-button{
-    display: flex;
-    align-items: center;
-}
-
-h1{
-    font-family: 'CeraCompactPro-Black';
-    font-size: 34;
-    letter-spacing: 1;
-    color: #FF158B;
-}
-h2{
-    font-family: 'CeraCompactPro-Light';
-    font-size: 15;
-    color: #fff;
-}
-h3{
-    font-family: 'CeraCompactPro-Light';
-    font-size: 11;
-    color: #16FFAB;
-}
-h4{
-    font-family: 'CeraCompactPro-Bold';
-    font-size: 17;
-    color: #fff;
-    letter-spacing: 1;
-}
-h5{
-    font-family: 'CeraPro-Regular';
-    font-size: 19;
-    color: #fff;
-}
-h6{
-    font-family: 'CeraCompactPro-Regular';
-    font-size: 12;
-    color: rgba(255, 255, 255, 0.7);
-}
-
-
-
-
-
-
-
-
-.system-reqirements h4{
-    margin-bottom: 24px;
-}
-.operating-systems{
-    display: flex;
-    margin-bottom: 40px;
-}
-.operating-systems .systems-block{
-    background-color: #2E2E2E;
-    border-radius: 10px;
-    height: 80px;
-    width: 297px;
-    margin-right: 48px;
-}
-.operating-systems .characteristics-block{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 135px 135px 135px 135px 135px 135px;
-
+.system-requirments td {
+	width: 100rem;
 }
