@@ -1,7 +1,7 @@
-import { useChat } from "../context/ChatContext";
+import { useChat } from "../../context/ChatContext";
 import { useState, useRef } from "react";
 import { Icon } from "semantic-ui-react";
-import { ImageUpload } from "../components/ImageUpload";
+import { ImageUpload } from "../../components/Chat/ImageUpload";
 import { sendMessage } from "react-chat-engine";
 
 export const ChatInput = () => {

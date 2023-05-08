@@ -1,8 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Formik, Form } from "formik";
-import { signUpValidationSchema, signUpDefaultValues } from "./formikconfig";
-import { FormField } from "./FormField";
+import { signUpValidationSchema, signUpDefaultValues } from "./Chat/formikconfig";
+import { FormField } from "./Chat/FormField";
 import { useState } from "react";
 import { fb } from "service/firebase";
 

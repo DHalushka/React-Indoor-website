@@ -1,5 +1,5 @@
-import { useChat } from "../context/ChatContext";
-import { useDebounce } from "../hooks/useDebounce";
+import { useChat } from "../../context/ChatContext";
+import { useDebounce } from "../../hooks/useDebounce";
 import { Search } from "semantic-ui-react";
 import { useEffect, useRef, useState } from "react";
 import { addPerson, getOtherPeople } from "react-chat-engine";

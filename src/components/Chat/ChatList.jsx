@@ -1,6 +1,6 @@
 import React from "react";
-import { useChat } from "../context/ChatContext";
-import { ChatAvatar } from "../components/ChatAvatar";
+import { useChat } from "../../context/ChatContext";
+import { ChatAvatar } from "../Chat/ChatAvatar";
 import { Icon } from "semantic-ui-react";
 import { joinUsernames} from "helpers/joinUsernames";
 import { notMe } from "helpers/notMe";

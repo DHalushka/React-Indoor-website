@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { useChat } from "../context/ChatContext";
-import { joinUsernames } from "../helpers/joinUsernames";
+import { useChat } from "../../context/ChatContext";
+import { joinUsernames } from "../../helpers/joinUsernames";
 import { Icon } from "semantic-ui-react";
-import { SearchUsers } from "../components/SearchUsers";
+import { SearchUsers } from "../Chat/SearchUsers";
 
 export const ChatToolbar = () => {
 	const { selectedChat, chatConfig } = useChat();

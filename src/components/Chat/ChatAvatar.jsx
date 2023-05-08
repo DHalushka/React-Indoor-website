@@ -1,5 +1,5 @@
-import { fb } from "../service/firebase";
-import { useChat } from "../context/ChatContext";
+import { fb } from "../../service/firebase";
+import { useChat } from "../../context/ChatContext";
 import { Image } from "semantic-ui-react";
 import React, { useEffect, useState } from "react";
 

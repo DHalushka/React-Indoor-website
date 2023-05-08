@@ -6,10 +6,10 @@ import { useResolved } from "hooks/useResolved";
 import { useNavigate } from "react-router-dom";
 import { useChat } from "context/ChatContext";
 import { getChats, ChatEngine } from "react-chat-engine";
-import { LeftRail } from "components/LeftRail";
-import { ChatToolbar } from "components/ChatToolbar";
-import { ChatInput } from "components/ChatInput";
-import { MessageList } from "components/MessageList";
+import { LeftRail } from "components/Chat/LeftRail";
+import { ChatToolbar } from "components/Chat/ChatToolbar";
+import { ChatInput } from "components/Chat/ChatInput";
+import { MessageList } from "components/Chat/MessageList";
 
 function Messages() {
 
