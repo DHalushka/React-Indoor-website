@@ -3,7 +3,6 @@ import React from "react";
 function CategorieTile(props) {
 	const { categorie, value, onCategorieClick } = props;
 	const categories = ["Adventure", "Puzzels", "Arcade", "Sports"];
-	console.log(value);
 	return (
 		<div className="categories-items">
 			{categories.map((categorieName, i) => (

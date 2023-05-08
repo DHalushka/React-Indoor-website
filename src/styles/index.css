@@ -12,6 +12,7 @@ span.my-icon {
 	font-size: 18px;
 }
 button {
+	padding: 1rem 2rem;
 	cursor: pointer;
 	display: flex;
 	justify-content: center;
@@ -21,6 +22,10 @@ button {
 	color: #fff;
 	font-family: "CeraCompactPro-Medium";
 	border-radius: 10px;
+}
+button[disabled]{
+	background-color: #880c4a;
+	cursor:not-allowed;
 }
 a {
 	text-decoration: none;
@@ -45,7 +50,12 @@ header {
 	height: 90px;
 	background: #2e2e2e;
 }
-
+.header-right{
+	gap: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 .cart {
 	background-color: #202020;
 	border-radius: 50%;
@@ -806,3 +816,23 @@ table {
 	box-shadow: 0 0 10rem 1rem #ff158b;
 	transition: 0.4s;
 }
+.ce-chat-engine{
+	display: none;
+}
+/*
+.ce-chat-engine{
+	width: calc(100vw - 53%);
+	height: calc(100vh - 90px);
+	border-radius: 10px;
+	background-color: #202020;
+}
+.ce-wrapper{
+	height: 100%;
+}
+.ce-chat-list-list{
+	background-color: #202020;
+}
+.ce-chats-container{
+	background-color: #16ffab;
+}
+*/

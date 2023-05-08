@@ -8,20 +8,7 @@ function GameTile(props) {
 		adv,
 		downloads,
 		rating,
-		imageURL,
-		categorie,
-		price,
-		description,
-		releaseDate,
-		developer,
-		OS,
-		processor,
-		memory,
-		graphics,
-		storage,
-		slide1,
-		slide2,
-		slide3
+		imageURL,		
 	} = props;
 	return (
 		<div class="game-tile">

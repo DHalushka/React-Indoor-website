@@ -1,6 +1,6 @@
 import React from "react";
 import GameTile from "./home-components/GameTile";
-import Search from "../Search";
+import Search from "../components/Search";
 import Pagination from "./Pagination";
 
 function Library() {
