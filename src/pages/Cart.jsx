@@ -14,11 +14,12 @@ function Cart() {
 			<div className="cart-page-item">
 				<div className="image">
 					<img src={`${process.env.PUBLIC_URL}/${imageURL}`} alt="game-mage" />
-                    <a href="#">Title</a>
+                    <a href="#">PUBG</a>
 				</div>
-				<p className="cart-item-price">$500</p>
+				<p className="cart-item-price">$19.99</p>
 				<button className="cart-item-remove">x</button>
 			</div>
+			<button className="buy">Buy Now</button>
 		</div>
 	);
 }

@@ -53,10 +53,32 @@ header {
 	background: #2e2e2e;
 }
 .header-right {
-	gap: 12px;
+	gap: 24px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+.header-user .user{
+	display: flex;
+	align-items: center;
+	gap: 3px;
+}
+.header-user .user{
+	font-family: "CeraCompactPro-Light";
+	color: #ffffffa8;
+	font-size: 13px;
+}
+.header-user .user span{
+	color: #16ffab;
+	font-size: 16px;
+}
+.header-user .user button{
+	padding: 0.5rem 0.7rem;
+	background-color: #525252;
+}
+.header-user .user button:hover{
+	background-color: #2e2e2e;
+	transition: 0.3s;
 }
 .cart {
 	background-color: #202020;
@@ -452,6 +474,17 @@ span.star {
 	font-family: "CeraCompactPro-Bold";
 	font-size: 17px;
 	color: #fff;
+	position: relative;
+}
+.cart-page .buy{
+	position: absolute;
+	bottom: 24px;
+	left: 50%;
+	font-size: 20px;
+}
+.cart-page .buy:hover{
+	box-shadow: 0 0 5rem 0.5rem #ff158b;
+
 }
 .cart-page-title {
 	margin-bottom: 24px;
@@ -483,8 +516,8 @@ span.star {
 	height: 100%;
 }
 .cart-page-item button {
-	height: 50%;
-	width: 45px;
+	height: 40px;
+	width: 40px;
 	border-radius: 50%;
 	padding: 5px;
 }
@@ -1096,6 +1129,9 @@ table {
 	color: #ffffffa8;
 	outline: none;
 }
+.sidebar .chats{
+	overflow:auto;
+}
 .sidebar .userChat {
 	padding: 10px;
 	display: flex;
@@ -1111,6 +1147,9 @@ table {
 	width: 50px;
 	border-radius: 50%;
 	object-fit: cover;
+	background-image: url("../../public/balnkprofile.webp");
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 .sidebar .userChat .userChatInfo span {
 	font-size: 18px;
@@ -1170,7 +1209,9 @@ table {
 	height: 40px;
 	border-radius: 50%;
 	object-fit: cover;
-	background-color: #880c4a;
+	background-image: url("../../public/balnkprofile.webp");
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 .messages .message .messageContent{
 	max-width: 80%;

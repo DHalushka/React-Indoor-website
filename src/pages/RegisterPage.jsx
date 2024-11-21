@@ -20,25 +20,6 @@ const RegisterPage = () => {
 			const storageRef = ref(storage, displayName);
 			const uploadTask = uploadBytesResumable(storageRef, file);
 
-			/*uploadTask.on(
-				(error) => {
-					setErr(true);
-				},
-				() => {
-					getDownloadURL(uploadTask.snapshot.ref).then(async (downloadURL) => {
-						await updateProfile(res.user, {
-							displayName,
-							photoURL: downloadURL,
-						});
-						await setDoc(doc(db, "users", res.user.uid), {
-							uid:res.user.uid,
-							displayName,
-							email,
-							photoURL: downloadURL,
-						});
-					});
-				}
-			);*/
 			await uploadBytesResumable(storageRef, file).then(() => {
 				getDownloadURL(storageRef).then(async (downloadURL) => {
 					try {
@@ -68,17 +49,7 @@ const RegisterPage = () => {
 		} catch (err) {
 			setErr(true);
 		}
-
-		/*const auth = getAuth();
-		const res = await createUserWithEmailAndPassword(auth, email, password)
-			.then((userCredential) => {
-				const user = userCredential.user;
-				console.log(user);
-			})
-			.catch((error) => {
-				const errorCode = error.code;
-				const errorMessage = error.message;
-			});*/
+		
 	};
 
 	return (
