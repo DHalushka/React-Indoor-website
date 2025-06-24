@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/React-Indoor-website/static/css/main.87b9a89d.css",
-    "main.js": "/React-Indoor-website/static/js/main.69d329d4.js",
+    "main.css": "/React-Indoor-website/static/css/main.464b84a0.css",
+    "main.js": "/React-Indoor-website/static/js/main.099fdb8d.js",
     "static/media/Promo-background.png": "/React-Indoor-website/static/media/Promo-background.61e425a52736e66c5925.png",
     "static/media/robot.png": "/React-Indoor-website/static/media/robot.f58e6d55674886cd3259.png",
-    "static/media/CeraPro-Regular.svg": "/React-Indoor-website/static/media/CeraPro-Regular.d457a3fae8ef2930a255.svg",
-    "static/media/CeraPro-Medium.svg": "/React-Indoor-website/static/media/CeraPro-Medium.3ab4aa26d2635b192306.svg",
-    "static/media/CeraCompactPro-Regular.svg": "/React-Indoor-website/static/media/CeraCompactPro-Regular.2932f5a3b730e2c73d20.svg",
-    "static/media/CeraCompactPro-Light.svg": "/React-Indoor-website/static/media/CeraCompactPro-Light.55eef8cae85744638022.svg",
-    "static/media/CeraCompactPro-Bold.svg": "/React-Indoor-website/static/media/CeraCompactPro-Bold.4230f9fdb7cdb871761b.svg",
-    "static/media/CeraCompactPro-Medium.svg": "/React-Indoor-website/static/media/CeraCompactPro-Medium.e8d4b510c45efe8caefb.svg",
-    "static/media/CeraCompactPro-Black.svg": "/React-Indoor-website/static/media/CeraCompactPro-Black.689a9155436212bc6a79.svg",
+    "static/media/CeraPro-Regular.svg": "/React-Indoor-website/static/media/CeraPro-Regular.82abe50cf4c608c4f382.svg",
+    "static/media/CeraPro-Medium.svg": "/React-Indoor-website/static/media/CeraPro-Medium.e69ebd09b1bca4ababe9.svg",
+    "static/media/CeraCompactPro-Regular.svg": "/React-Indoor-website/static/media/CeraCompactPro-Regular.0fd6f32e8582412bf299.svg",
+    "static/media/CeraCompactPro-Light.svg": "/React-Indoor-website/static/media/CeraCompactPro-Light.5af7c9f734ef68f0fe21.svg",
+    "static/media/CeraCompactPro-Bold.svg": "/React-Indoor-website/static/media/CeraCompactPro-Bold.15fcd9f74df2815123d8.svg",
+    "static/media/CeraCompactPro-Medium.svg": "/React-Indoor-website/static/media/CeraCompactPro-Medium.64d8c2805c2c8deb3dd6.svg",
+    "static/media/CeraCompactPro-Black.svg": "/React-Indoor-website/static/media/CeraCompactPro-Black.4cc9ba02e38a00a817b8.svg",
     "static/media/CeraPro-Regular.eot": "/React-Indoor-website/static/media/CeraPro-Regular.964f3bbc1023238792f1.eot",
     "static/media/CeraPro-Regular.ttf": "/React-Indoor-website/static/media/CeraPro-Regular.1b7f7963cbafd9cc1e33.ttf",
     "static/media/CeraPro-Medium.eot": "/React-Indoor-website/static/media/CeraPro-Medium.fce42add8b29e6bfc9d7.eot",
@@ -36,13 +36,13 @@
     "static/media/myfont-webfont.woff": "/React-Indoor-website/static/media/myfont-webfont.b2d26fd09d630b26896b.woff",
     "static/media/MyFont.ttf": "/React-Indoor-website/static/media/MyFont.36997a9c2109fafaa7cf.ttf",
     "static/media/myfont-webfont.woff2": "/React-Indoor-website/static/media/myfont-webfont.2e6f9c8be79cbb82f6df.woff2",
-    "static/media/LOGO.svg": "/React-Indoor-website/static/media/LOGO.eba5737af1fac06450a8b219d12c0e53.svg",
+    "static/media/LOGO.svg": "/React-Indoor-website/static/media/LOGO.75400b2a26dd0e3186222e3becf9795c.svg",
     "index.html": "/React-Indoor-website/index.html",
-    "main.87b9a89d.css.map": "/React-Indoor-website/static/css/main.87b9a89d.css.map",
-    "main.69d329d4.js.map": "/React-Indoor-website/static/js/main.69d329d4.js.map"
+    "main.464b84a0.css.map": "/React-Indoor-website/static/css/main.464b84a0.css.map",
+    "main.099fdb8d.js.map": "/React-Indoor-website/static/js/main.099fdb8d.js.map"
   },
   "entrypoints": [
-    "static/css/main.87b9a89d.css",
-    "static/js/main.69d329d4.js"
+    "static/css/main.464b84a0.css",
+    "static/js/main.099fdb8d.js"
   ]
 }
