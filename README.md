@@ -6,6 +6,7 @@ The website includes a Library, Messages, Friends, Schedule, and Home page, as w
 ## 🔗 Demo
 
 👉 [View the site](https://dhalushka.github.io/React-Indoor-website/)
+
 🤐 Try all the function after Logging in with **_myemail@domain.com_**. The passsword is **_test12345_**
 
 ## 🚀 Technologies
