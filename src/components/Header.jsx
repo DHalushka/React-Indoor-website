@@ -20,7 +20,7 @@ function Header() {
 			return (
 				<div className="header-user">
 					<div className="user">
-						<h3>Welkome, </h3>
+						<h3>Welcome, </h3>
 						<span>{currentUser.displayName}</span>
 						<button onClick={() => signOut(auth)}>Log Out</button>
 					</div>
