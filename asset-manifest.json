@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.29c7e360.css",
-    "main.js": "/static/js/main.1becef85.js",
+    "main.js": "/static/js/main.0f9618bf.js",
     "static/media/Promo-background.png": "/static/media/Promo-background.61e425a52736e66c5925.png",
     "static/media/robot.png": "/static/media/robot.f58e6d55674886cd3259.png",
     "static/media/CeraPro-Regular.svg": "/static/media/CeraPro-Regular.82abe50cf4c608c4f382.svg",
@@ -39,10 +39,10 @@
     "static/media/LOGO.svg": "/static/media/LOGO.75400b2a26dd0e3186222e3becf9795c.svg",
     "index.html": "/index.html",
     "main.29c7e360.css.map": "/static/css/main.29c7e360.css.map",
-    "main.1becef85.js.map": "/static/js/main.1becef85.js.map"
+    "main.0f9618bf.js.map": "/static/js/main.0f9618bf.js.map"
   },
   "entrypoints": [
     "static/css/main.29c7e360.css",
-    "static/js/main.1becef85.js"
+    "static/js/main.0f9618bf.js"
   ]
 }
