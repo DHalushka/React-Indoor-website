@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+# React Indoor Website 🎮
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Electronic Games Marketplace** with its own social networking platform. The application is developed in JavaScript using ReactJS framework. Firebase, a cloud-based NoSQL service, is used as the database.
+The website includes a Library, Messages, Friends, Schedule, and Home page, as well as Registration, Login, About Us, and other pages.
 
-## Available Scripts
+## 🔗 Demo
 
-In the project directory, you can run:
+👉 [View the site](https://dhalushka.github.io/React-Indoor-website/)
+🤐 Try all the function after Logging in with **_myemail@domain.com_**. The passsword is **_test12345_**
 
-### `npm start`
+## 🚀 Technologies
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- ⚛️ React
+- 🌐 React Router
+- 📦 React Scripts
+- 💅 CSS
+- 📁 GitHub Pages for deployment
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📦 Installation & Launch
 
-### `npm test`
+```bash
+# Clone the repository
+git clone https://github.com/dhalushka/React-Indoor-website.git
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Navigate to the project directory
+cd React-Indoor-website
 
-### `npm run build`
+# Install dependencies
+npm install
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Run the development server
+npm start
+````
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🌍 Deployment
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The site is deployed to GitHub Pages using the command:
 
-### `npm run eject`
+```bash
+npm run build
+npm run deploy
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Deployment is configured with the `gh-pages` package in `package.json`.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📸 Screenshots
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![Home Page](public/HomePage.gif)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🛠 Features
 
-## Learn More
+* Page navigation without reloads
+* Interactive UI elements
+* App account features
+* Active messenger
+* Easily expandable (e.g., schedule, booking system, etc.)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📌 Planned Improvements
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* [ ] Add mobile responsiveness
+* [ ] Implement a contact form with validation
+* [ ] Expand Game Library
 
-### Code Splitting
+## 👩‍💻 Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Daria ([GitHub profile](https://github.com/dhalushka))
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### 📜 License
 
-### Making a Progressive Web App
+MIT — free to use and modify with credit to the author.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
