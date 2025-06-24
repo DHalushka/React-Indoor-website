@@ -1,7 +1,7 @@
 {
 	"name": "new-app",
 	"version": "0.1.0",
-	"homepage": "http://DHalushka.github.io/React-Indoor-website",
+	"homepage": "http://DHalushka.github.io/",
 	"private": true,
 	"dependencies": {
 		"@testing-library/jest-dom": "^5.16.5",
@@ -43,6 +43,6 @@
 		]
 	},
 	"devDependencies": {
-		"gh-pages": "^6.3.0"
+		"gh-pages": "^6.0.0"
 	}
 }
